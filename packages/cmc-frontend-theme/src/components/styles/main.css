@@ -1,0 +1,259 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+.has-small-font-size {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.has-medium-font-size {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.has-small-font-size {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.has-orange-color[class] {
+    color: var(--orange);
+}
+
+.has-green-color[class] {
+    color: var(--green);
+}
+
+.has-black-color[class] {
+    color: var(--black);
+}
+
+.has-white-color[class] {
+    color: var(--white);
+}
+
+.has-orange-cmc-background-color[class] {
+    background-color: var(--orange);
+}
+
+.has-green-cmc-background-color[class] {
+    background-color: var(--green);
+}
+
+.has-black-cmc-background-color[class] {
+    background-color: var(--black);
+}
+
+.has-white-cmc-background-color[class] {
+    background-color: var(--white);
+}
+
+.wp-block-getwid-section .wp-block-getwid-section__wrapper .wp-block-getwid-section__inner-wrapper {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Typography */
+h2 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67px;
+}
+
+h3 {
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.post-title {
+    display: none;
+}
+
+p:empty {
+    margin: 0 !important;
+    display: none;
+}
+
+/* End Typography */
+
+/* Fix header glitch */
+.ugb-header.ugb-header--v3 .ugb-header__item {
+    padding-left: 0;
+}
+
+/* Hide Button on Work Card */
+.ugb-card__item {
+    position: relative;
+}
+
+.ugb-card__item .ugb-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ugb-card__item .ugb-button span {
+    display: none;
+}
+
+/* Our work custom hover */
+
+.ugb-card__item.ugb--shadow-1:hover {
+    box-shadow: 0 5px 5px 0 rgb(18 63 82 / 4%), 0 0 0 1px rgb(176 181 193 / 20%) !important;
+    transition: box-shadow .1s ease-in-out;
+}
+
+.hover-color .ugb-card__item .ugb-card__image {
+    background-color: #EEF7F6;
+    transition: background-color .1s ease-in-out;
+}
+
+.hover-color .ugb-card__item:hover .ugb-card__image {
+    background-color: #c6e6e2;
+}
+
+/* End Our work custom hover */
+
+@media (max-width: 767px) {
+    .ugb-header__subtitle br {
+        display: none;
+    }
+}
+
+/* Partner Page */
+.partner-grid .ugb-feature-grid__image span {
+    padding: 0;
+}
+
+.partner-grid .ugb-feature-grid__image span img {
+    height: 60px !important;
+    object-fit: contain;
+    object-position: left center;
+    max-width: 250px !important;
+}
+
+/* Hero Mobile */
+@media (max-width: 767px) {
+    .ugb-main-block.ugb-header:before {
+        background-color: var(--cyan) !important;
+        opacity: 1 !important;
+    }
+
+    .ugb-main-block.ugb-header .ugb-header__title,
+    .ugb-main-block.ugb-header .ugb-header__subtitle {
+        color: var(--green);
+    }
+}
+
+/* Contact form button */
+.contact-form input[type="submit"] {
+    background-color: var(--orange) !important;
+    border-color: var(--orange) !important;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    border-radius: 10px !important;
+}
+
+.contact-form input:focus {
+    outline-color: var(--cyan) !important;
+}
+
+.contact-form label {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    width: 100%;
+}
+
+.contact-form a {
+    color: var(--orange)!important;
+    background-color: transparent;
+    border: 1px solid var(--orange)!important;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600!important;
+    font-size: 20px!important;
+    line-height: 24px!important;
+    border-radius: 10px!important;
+    padding: 12px 36px;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-left: 15px; 
+}
+
+@media (max-width: 957px) and (min-width: 767px){
+    .contact-form a {
+        margin-left: 0;
+        margin-top: 15px;
+        margin-right: 15px
+    }
+}
+
+@media (max-width: 426px) {
+    .contact-form a {
+        margin-left: 0;
+        margin-top: 15px;
+        margin-right: 15px
+    }
+}
+
+.contact-infos p {
+    margin-bottom: 0 !important;
+}
+
+.contact-infos .ugb-inner-block {
+    padding: 0 !important;
+}
+
+.contact-form form input[type="text"] {
+    width: 100%;
+}
+
+/* FAQ section */
+.faq-section .ugb-accordion.ugb-accordion--v2 .ugb-accordion__content .ugb-accordion__content-inner {
+    background: var(--white);
+    opacity: 0.8;
+    padding-bottom: 20px;
+}
+
+.faq-section .ugb-accordion__arrow {
+    display: none;
+}
+
+/* Career Page: Available Roles */
+.wp-block-ugb-text.role-item-desc p {
+    margin-bottom: 0;
+}
+
+.wp-block-ugb-text.role-item-desc .ugb-text__text-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.wp-block-ugb-text.role-item-desc .ugb-text__rule {
+    width: 8px;
+    height: 8px !important;
+    margin: 0 !important;
+    border-radius: 50%;
+}

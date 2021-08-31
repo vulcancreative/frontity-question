@@ -1,0 +1,30 @@
+{
+  "name": "cmc-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity build && frontity serve"
+  },
+  "prettier": {},
+  "dependencies": {
+    "@frontity/core": "1.14.0",
+    "@frontity/head-tags": "^1.1.1",
+    "@frontity/html2react": "1.7.0",
+    "@frontity/tiny-router": "1.4.2",
+    "@frontity/wp-source": "1.11.4",
+    "@vulcancreative/frontity-contact-form-7": "git+ssh://git@github.com/vulcancreative/frontity-contact-form-7",
+    "cmc-frontend-theme": "file:packages/cmc-frontend-theme",
+    "frontity": "1.15.0",
+    "frontity-share": "^0.1.5"
+  }
+}
